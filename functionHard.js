@@ -59,8 +59,8 @@ function Blackjack(cards) {
         for (let nums = 0; nums < cards.length; nums++) {
             if (cards[nums] === 11) {
                     cards[nums] = 1;
-                    total = total + cards[nums];
-                    }
+                }
+                total = total + cards[nums];
                 }
             }   
         if (total > 21) {
@@ -69,7 +69,7 @@ function Blackjack(cards) {
         return bust      
     }
 
-console.log(Blackjack([3, 9, 'A']))
+console.log(Blackjack([3, 9, 'A', 'K']))
 
 
 
