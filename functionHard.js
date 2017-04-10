@@ -87,3 +87,50 @@ function Divisors(num) {
 
 console.log(Divisors(96));
 
+console.log('<---------------HARD_Problem #6: Hamming------------------->')
+
+function Hamming(string1, string2) {
+    let stringnums = 0;
+    if (string1.length !== string2.length) {
+        stringnums = 0;
+    } else {
+        for (let f = 0; f < string1.length; f++) {
+            if (string1[f] === string2[f]) {
+                stringnums = stringnums + 1;
+            }
+        }
+    }
+    return stringnums
+}
+
+console.log(Hamming('table', 'cable'));
+
+console.log('<---------------HARD_Problem #7: Pokemon------------------->')
+
+function Pokemon(numcaught) {
+    let totalcaught = 0;
+    let pokeArray = [];
+    for (let pokeball = 0; pokeball < numcaught.length; pokeball++) {
+        totalcaught = totalcaught + numcaught[pokeball];
+        pokeArray.push(totalcaught);
+    }
+    return pokeArray;
+}
+
+console.log(Pokemon([1, 2, 5, 1, 3]));
+
+
+console.log('<---------------HARD_Problem #8: Find------------------->')
+
+function find(array, index) {
+    let found = 0;
+    for (let g = 0; g < array.length; g++) {
+        if (array[g] === index) {
+            found = g;
+        }
+    }
+    return found
+}
+
+
+console.log(find([8, 7, 6, 5, 4, 3, 2, 1], 1));
